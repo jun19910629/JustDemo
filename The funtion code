@@ -1,0 +1,51 @@
+#include <iostream>
+//case 1  by value
+//void Exchg1(int x, int y)
+//{
+//	int tmp;
+//	tmp = x;
+//	x = y;
+//	y = tmp;
+//	printf("x = %d, y = %d\n", x, y);
+//}
+//
+//void main()
+//{
+//	int a = 4, b = 6;
+//	Exchg1(a, b);
+//	printf("a=%d,b = %d\n", a, b);
+//}
+
+//case2   by pointer
+//void Exchg2(int *px, int *py)
+//{
+//	int tmp = *px;
+//	*px = *py;
+//	*py = tmp;
+//	printf("*px = %d, *py = %d\n", *px, *py);
+//}
+//
+//void main()
+//{
+//	int a = 4;
+//	int b = 6;
+//	Exchg2(&a, &b);
+//	printf("a = %d, b = %d\n", a, b);
+//}
+
+
+//case 3  by reference
+void  Exchg3(int &x, int &y)
+{
+	int tmp = x;
+	x = y;
+	y = tmp;
+	printf("x=%d,y=%d\n", x, y);
+}
+void main()
+{
+	int a = 4;
+	int b = 6;
+	Exchg3(a, b);
+	printf("a=%d,b=%d\n", a, b);
+}
